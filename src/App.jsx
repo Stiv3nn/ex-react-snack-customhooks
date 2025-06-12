@@ -46,7 +46,8 @@ function App() {
   return (
     <div>
       <h1>Data e ora attuali:</h1>
-      <p>{currentDate.toLocaleString()}</p>
+      {/* toLocaleString() E' UN METODO DELLE DATE PER VEDERE LA STRINGA DELLA MIA DATA */}
+      <p>{currentDate.toLocaleString()}</p> 
     </div>
   );
 }

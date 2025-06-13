@@ -18,6 +18,17 @@
 // Si aggiorna automaticamente ogni secondo.
 // Usa useEffect() per gestire l’aggiornamento.
 
+
+
+//  Snack 3: useCustomPointer() – Cambia il Cursore del Mouse
+// Creare un custom hook che sostituisca il cursore del mouse con un componente personalizzato.
+
+// Cosa deve fare?
+
+// Prende in input una stringa o un JSX component (es. un’emoji, un'icona, un'animazione).
+// Posiziona il componente al posto del puntatore del mouse.
+// Il componente segue i movimenti del mouse.
+
 //---------------------------------------------------------------------------------------------------------------------------
 
 // import useSwitch from "./useSwitch";
@@ -38,16 +49,33 @@
 
 //---------------------------------------------------------------------------------------------------------------------------
 
-import useDate from "./useDate";
+// import useDate from "./useDate";
+
+// function App() {
+//   const currentDate = useDate();
+
+//   return (
+//     <div>
+//       <h1>Data e ora attuali:</h1>
+//       {/* toLocaleString() E' UN METODO DELLE DATE PER VEDERE LA STRINGA DELLA MIA DATA */}
+//       <p>{currentDate.toLocaleString()}</p> 
+//     </div>
+//   );
+// }
+
+// export default App;
+
+//---------------------------------------------------------------------------------------------------------------------------
+
+import useCustomPointer from "./useCustomPointer";
 
 function App() {
-  const currentDate = useDate();
+  const customPointer = useCustomPointer("🔥");
 
   return (
     <div>
-      <h1>Data e ora attuali:</h1>
-      {/* toLocaleString() E' UN METODO DELLE DATE PER VEDERE LA STRINGA DELLA MIA DATA */}
-      <p>{currentDate.toLocaleString()}</p> 
+      <h1>Sposta il mouse per vedere il cursore personalizzato!</h1>
+      {customPointer}
     </div>
   );
 }

@@ -6,7 +6,7 @@ function useDate() {
 
     // 2 --> CREARE USEEFFECT (MILESTONE 2)
     useEffect(() => {
-        // 3 --> CREIAMO IL NOSTRO INTERVAL (MILESTONE 2)
+        // 3 --> CREIAMO IL NOSTRO INTERVAL, STRUTTURA STANDARD (MILESTONE 2)
         const interval = setInterval(() => {
             setCurrentDate(new Date());
         }, 1000);
